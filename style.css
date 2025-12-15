@@ -1,5 +1,6 @@
 .flex {
-    height: 95vh;
+    margin-top: 5vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,6 +42,7 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     gap: 2vh;
+    margin: 5vh 0;
 }
 
 #alfabeto-flex-container > button {
@@ -66,6 +68,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 10vh;
     font-size: 4vh;
     text-align: center;
 }
@@ -84,6 +87,7 @@ h2 {
 }
 
 #button-continuar {
+    margin-bottom: 5vh;
     padding: 1vw;
     color: white;
     border-radius: 4vw;
@@ -101,4 +105,39 @@ h2 {
 
 .colorido {
     background-color: #F43D3D;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 15vw;
+    }
+
+    #button-jogar {
+        padding: 3vw;
+        border-radius: 10vw;
+        font-size: 5vw;
+    }
+
+    #button-continuar {
+        padding: 3vw;
+        border-radius: 10vw;
+        font-size: 5vw;
+    }
+
+    .letra {
+        font-size: 10vw;
+    }
+
+    .underline {
+        font-size: 20vw;
+        padding: 0 1vw;
+        margin: -20vw 0 0 0;
+        font-weight: 300;
+    }
+
+    #alfabeto-flex-container > button {
+        font-size: 5vw;
+        padding: 2vh;
+        flex-basis: 12vw;
+    }
 }
